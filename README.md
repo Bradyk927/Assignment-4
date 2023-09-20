@@ -25,3 +25,47 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+<!-- <p>Even - {{number}}</p> -->
+@Input() number: number;
+<!-- <div class="row">
+    <div class="col-xs-12">
+        <button class="btn btn-success" 
+        (click)="onGameStarted()">Start</button>
+        <button class="btn btn-danger"
+        (click)="onGamePaused()">Stop</button>
+</div>
+</div> -->
+
+//   onGameStarted(){
+// this.interval = setInterval(() => {
+// this.intervalFired.emit(this.lastNumber + 1);
+// this.lastNumber++
+// }, 1000)
+
+//   }
+
+//   onGamePaused(){
+//     clearInterval(this.interval);
+//       }
+
+//  interval;
+// @Output() intervalFired = new EventEmitter<number>();
+//  lastNumber = 0;
+  // @Input() number: number;
+
+  <!-- <app-game-control (intervalFired)="onIntervalFired($event)"></app-game-control>
+  <app-even *ngFor="let evenNumber of evenNumbers" [number]="evenNumber"></app-even>
+  <app-odd *ngFor="let oddNumber of oddNumbers" [number]="oddNumber"></app-odd> -->
+
+   // evenNumbers: number[] = [];
+  // oddNumbers: number[] = [];
+
+
+  // onIntervalFired(firedNumber: number){
+  //   if (firedNumber % 2 === 0){
+  //       this.evenNumbers.push(firedNumber)
+  //   } else{
+  //     this.oddNumbers.push(firedNumber)
+  //   }
+  // }
